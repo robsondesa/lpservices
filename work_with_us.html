@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>LP Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LPPrancheta 1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+                
+    <div class="cursor"></div>
+        <div class="cursor cursor2"></div>
+    </div>  
+
+    <button class="btn-whatsapp" onclick="window.open('https://wa.me/558132235482?text=Ol%C3%A1%2C+venho+atrav%C3%A9s+do+site+da+LP+SERVICES%2C+poderia+me+ajudar%3F', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-black"><img src="img/LPPrancheta 1.png" width="60px" alt=""></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Início</a>
+                        <a href="about.html" class="nav-item nav-link">Quem somos</a>
+                        <a href="service.html" class="nav-item nav-link">Serviços</a>
+                        <a href="contact.html" class="nav-item nav-link">Contato</a>
+                        <a href="work_with_us.html" class="nav-item nav-link active">Trabalhe conosco</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Outros</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="blog.html" class="dropdown-item">Blog</a>
+                                <a href="gallery.html" class="dropdown-item">Portfólio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary work">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-black mb-4 animated slideInRight" style="color: #fff;">Trabalhe Conosco</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a href="index.html" style="color: #fff;">Início</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Trabalhe Conosco</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Trabalhe Conosco Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Trabalhe Conosco</div>
+                <h1 class="mb-4">Envie seu Currículo</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text-center mb-4">Envie os dados necessários</p>
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <form id="meu-form" action="process_curriculo.php" method="post" enctype="multipart/form-data">
+                            <div class="row g-1">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+                                        <label for="name">Seu nome:</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(81) 99999-9999" required>
+                                        <label for="telefone">Telefone:</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
+                                        <label for="email">Seu e-mail:</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Deixe uma mensagem aqui" id="mensagem" name="mensagem" style="height: 150px"></textarea>
+                                        <label for="message">Deixe uma mensagem aqui:</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="curriculo">Anexar Currículo ( PDF ):</label>
+                                        <input type="file" class="form-control" id="curriculo" name="curriculo" accept=".pdf" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-secondary w-100 py-3" type="submit">Enviar Currículo</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/curriculo.2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Trabalhe Conosco End -->
+
+    <!-- Beneficios Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Nossos benefícios</div>
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/ben.png">
+                    </div>
+                </div>
+                <div class="col-lg-6  wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-4">Conheça os benefícios de Trabalhar conosco</h1>
+                    <p class="mb-4">Não perca mais tempo, venha fazer parte de nossa empresa:</p>
+                    <p class="mb-4">Oferecemos a melhor qualidade em parceria com nossos colaboradores, 
+                        cuidando de seus e nossos interesses, juntos por um ambiente saudável e acolhedor.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Plano de Saúde</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Vale Transporte</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Vale Alimentação</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Gympass</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Beneficios End -->
+
+    
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Entenda cada benefício</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Tal benefício
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1><img src="img/LPPrancheta 2.png" width="200px" alt=""></h1>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-5 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Entrar em contato</h5>
+                    <p><i class="fa fa-map-marker-alt me-1"></i>R. da Regeneração, 640 - Arruda, Recife - PE, 52120-300</p>
+                    <p><i class="fa fa-phone-alt me-1"></i>(81) 3223-5482</p>
+                    <p><i class="fa fa-envelope me-1"></i>lpterceirizacao@outlook.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Links Populares</h5>
+                    <a class="btn btn-link" href="about.html">Sobre nós</a>
+                    <a class="btn btn-link" href="contact.html">Contate-nos</a>
+                    <a class="btn btn-link" href="service.html">Nossos Serviços</a>
+                    <a class="btn btn-link" href="work_with_us.html">Trabalhe conosco</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">LP SERVICES</a>, Todos os direitos reservados.
+                        Desenvolvido por <a class="border-bottom" href="https://robsondesa.github.io/robsonportfolio/" target="_blank">InovCodeR.</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Início</a>
+                            <a href="contact.html">Contato</a>
+                            <a href="work_with_us.html">Trabalhe conosco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-secondary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+    <script>
+        $(function() {
+        $('#meu-form').submit(function(event) {
+            // Previne a ação padrão de enviar o formulário e atualizar a página
+            event.preventDefault();
+
+            // Envia o formulário por meio de uma requisição assíncrona
+            $.ajax({
+            type: 'POST',
+            url: 'enviar_formulario.php', // substitua pelo URL do seu script de envio de formulário
+            data: $('#meu-form').serialize(), // envia os dados do formulário
+            dataType: 'json', // informa que o retorno é em JSON
+            success: function(response) {
+                // Caso de sucesso: exibe uma mensagem de sucesso e limpa o formulário
+                alert(response.mensagem);
+                $('#meu-form')[0].reset();
+            },
+            error: function() {
+                // Caso de erro: exibe uma mensagem de erro
+                alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.');
+            }
+            });
+        });
+        });
+
+    </script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
