@@ -4,6 +4,7 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $telefone_internacional = '+' . preg_replace('/[^0-9]/', '', str_replace('-', '', $telefone));
 $mensagem = $_POST['mensagem'];
+$estado = $_POST['estado'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
 
@@ -14,6 +15,7 @@ $arquivo = "
     Nome: $nome
     E-mail: $email
     Contato: $telefone_internacional
+    Estado da Vaga: $estado
     
     Mensagem:
     $mensagem
@@ -22,7 +24,7 @@ $arquivo = "
     Este e-mail foi enviado pelo formulário de contato do site.
 ";
 
-$destinatario = "robsonsa201499@gmail.com"; // Substitua pelo seu endereço de e-mail
+$destinatario = "selecao@lpservices.com"; // Substitua pelo seu endereço de e-mail
 $assunto = "Envio de Currículo";
 
 $headers  = "MIME-Version: 1.0\n";
