@@ -10,6 +10,19 @@ html p{
     text-align: justify;
 }
 
+body::-webkit-scrollbar {
+	width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #14183E;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #fa7c1b;    /* color of the scroll thumb */
+	border: 3px solid #163534;  /* creates padding around scroll thumb */
+  }
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -1708,58 +1721,5 @@ a:hover {
     font-size: 14px;
 }
 
-.grayscale {
-    filter: grayscale(100%);
-    transition: filter 0.5s;
-    cursor: pointer;
-}
 
-.grayscale:hover {
-    filter: grayscale(0%);
-}
 
-.grayscale.clicked {
-    filter: grayscale(0%);
-}
-
-.partner-item {
-    width: 150px; /* ou qualquer largura desejada */
-    height: auto; /* mantém a proporção da imagem */
-    max-width: 100%; /* garante que a logo não ultrapasse a largura do contêiner */
-    text-align: center;
-    padding: 10px; /* ajuste o valor conforme necessário */
-}
-
-/* Definir tamanho padrão para as logos */
-.partner-item img {
-    width: 100px; /* ajuste o tamanho conforme necessário */
-    height: auto; /* mantém a proporção da imagem */
-    display: block;
-    margin: 0 auto; /* centraliza a imagem dentro do item */
-}
-
-/* Remover margens laterais dos col-md-3 col-4 */
-.partner-item-general .col-md-3.col-4 {
-    padding-left: 70px;
-    padding-right: 5px;
-}
-
-/* Contêiner geral */
-.partner-item-general .container-fluid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Contêiner das logos */
-.partner-item-general .container .row {
-    justify-content: center;
-}
-
-@media (max-width: 767px) {
-    /* Remover margens laterais dos col-md-3 col-4 */
-    .partner-item-general .col-md-3.col-4 {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
